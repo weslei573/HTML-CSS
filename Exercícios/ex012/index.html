@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video com HTML5</title>
+</head>
+
+<body>
+
+    <!-- Essa forma só e ultio se usuario perdi, ou seja, o cliente -->
+    <h1>Inserido videos hospedador localmente</h1>
+    <p>Este video esta hospedador no meu proprio servidor</p>
+
+    <video width="560" poster="imagens/poster-video.jpg" controls>
+        <source src="midia/meu-video.mp4.mp4" type="video/mp4">
+        <source src="midia/meu-video.webm.webm" type="video/webm">
+        <source src="midia/meu-video.mkv.mkv" type="video/mp4">
+        <source src="midia/meu-video.ogv.ogv" type="video/ogg">
+        <p>Seu navegador não tem compatibilidade com reprodução de video</p>
+    </video>
+
+    <!-- Técnica de adiciona vídeo de serviços de vídeo, serviço de hospedagem de vídeo -->
+    <h1>Inserindo vídeos do YouTube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/lY_HgtPWHOU?si=YC12_H3CTa-riwxT"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+    </iframe>
+
+    <h1>Inserindo vídeo do Vimeo</h1>
+    <iframe src="https://player.vimeo.com/video/71127606?h=d543aa14ac&portrait=0" width="560" height="315"
+        frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen>
+    </iframe>
+
+</body>
+
+</html>

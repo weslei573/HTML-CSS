@@ -1,0 +1,18 @@
+body{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;      
+    background-color: rgb(32, 28, 28);      
+    color: aliceblue;
+    font-family: Arial, sans-serif;
+}
+
+.HREF{
+    text-decoration: none;
+    color: #fff;
+}
+
+.HREF:hover{
+    text-decoration: underline;
+}

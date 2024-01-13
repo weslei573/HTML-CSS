@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes Externas</title>
+    <style>
+        /*fonte externa*/
+        /* Tipo de FORMAT()
+        -opentype (otf)
+        -truetype (ttf)
+        -embedded-opentype
+        -truetype-aat (Apple Advanced Typegraply)
+        -svg
+        */
+
+        @font-face {
+            font-family: 'Heart';
+            src: url('fonts/HeartsandArrows.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'Love';
+            src: url('fonts/love story ttf.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        body{
+            font-family: 'Love', Arial, Helvetica, sans-serif;
+            font-weight: normal;
+        }
+        h1{
+            font-family: 'Heart', Times, serif;
+            font-size: 3em;
+            font-weight: normal;
+        }
+        h2{
+            font-family: 'Heart', Times, serif;
+            font-size: 2em;
+            font-weight: normal;
+        }
+    </style>
+</head>
+<body>
+    <h1>Titulo</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta nam praesentium, blanditiis laudantium error consequatur esse ea. Saepe laborum magni, placeat commodi, ullam deserunt dicta quas unde eius nesciunt ut.</p>
+    <h2>Subtitulo</h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non sed tempora excepturi at similique animi, perferendis, natus itaque adipisci cupiditate deserunt dignissimos dolorum laudantium magni. Fugiat voluptates laudantium adipisci id.</p>
+</body>
+</html>

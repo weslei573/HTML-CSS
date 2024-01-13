@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+        body {
+            font-family: 'Work Sans', Arial, Helvetica, sans-serif;
+            /* 
+            Medida Absoluta
+            cm, mm, in, (px), pt, pc
+
+            Medida Relativa
+            (em), ex, rem, vw, vh, %
+
+            16px geralmente  = 1em
+            */
+            font-size: 1em;
+            font-weight: 300; 
+            /*
+            FONT-WEIGHT: 
+            -----------: LIGHTER --> MAIS LEVE;
+            -----------: NORMAL  --> NORMAL;
+            -----------: BOLD -----> NEGRITO;
+            -----------: BOLDER ---> MAIS QUE NEGRITO;
+            -----------: NUMERICO -> COMEÇA ME 100 E TERMINA EM 900; 
+            */
+        }
+
+        h1 {
+            /* SHORTHAND FONT */
+            /* 
+            ORDEM: 
+            fONT-STYLE -> FONT-WEIGHT -> FONT-SIZE -> FONT-FAMILY 
+            */
+
+            font: italic bolder 3em 'Work Sans', sans-serif;
+
+            /*
+            CONFIGURAÇÃO MUITO UTILIZADA, QUE PODE SE CONDENSADA PARA O (SHORTHAND FONT)
+            h1{
+            font-family: 'Work Sans', sans-serif; --> FONTE
+            font-weight: bolder; -------------------> NEGRITO
+            font-style: italic; --------------------> ITÁLICO
+            text-decoration: underline: ------------> SUBLINHADO
+            font-size: 3em; ------------------------> TAMANHO
+            }
+            */
+        }
+        h2{
+            font: bolder 2em 'Work Sans';
+        }
+    </style>
+
+    <!-- PARA MEDIDAS DE FONTE PARA USA NO FONT-SIZE E RECOMENDADO O USO DO (PX OU EM) E (16PX = 1EM)-->
+</head>
+
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus earum reprehenderit voluptatem quos
+        veritatis placeat animi, nostrum quas et sint eveniet aspernatur at ipsum totam consectetur repellat tenetur
+        minus dolor!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti harum temporibus pariatur sunt reiciendis
+        laborum, optio molestias officia ab beatae, et expedita incidunt ducimus eveniet saepe eaque? Sequi, perferendis
+        aliquam!</p>
+    <h2>Subtitulo do exercicio</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi voluptate adipisci veritatis dolor rerum
+        consequatur sapiente dolorem. Unde, ad pariatur? Pariatur veritatis iste id qui dolor nesciunt. Temporibus, iste
+        velit?]</p>
+</body>
+
+</html>
