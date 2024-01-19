@@ -3,4 +3,4 @@
 
  Estou aprendendo a criar sites e agora vou gerenciar meus reprositórios!
 
-<a href="https://weslei573.github.io/HTML-CSS/Exerc%C3%ADcios/ex001/index.html">Executar o exercícios 001</a>
+<a href="https://weslei573.github.io/HTML-CSS/Exercícios/ex001/index.html">Executar o exercícios 001</a>
