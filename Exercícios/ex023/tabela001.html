@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table{
+            width: 400px;
+            border-collapse: collapse;  
+            /* 
+                Border-Collapse: colllapse; = Isso serve para colar uma borta na outra
+            */
+        }
+
+        tr.linha{
+            background-color: darkgray;
+        }
+
+        td{
+            border: 1px solid black;
+            padding: 8px;
+        }
+
+        td.dado{
+            background-color: bisque;
+        }
+    </style>
+</head>
+<body>
+    <h1>Minha primeira tabela</h1>
+    <!--
+        Tabela serve para organização de dados
+
+        HIERAQUIA DE TABELA (Simples)
+
+        TABLE = tabela
+            TABLE ROW = linha de tabela
+                TABLE HEADER = cabeçalho de tabela
+                TABLE DATA = dado de tabela   
+    -->
+    <table>
+        <tr> <!-- Primeria Linha -->
+            <td>A1</td> <!-- coluna 1 -->
+            <td>B1</td> <!-- coluna 2 -->
+            <td>C1</td> <!-- coluna 3 -->
+        </tr>
+        <tr class="linha"> <!-- Segunda Linha -->
+            <td>A2</td> <!-- coluna 1 -->
+            <td>B2</td> <!-- coluna 2 -->
+            <td>C2</td> <!-- coluna 3 -->
+        </tr>
+        <tr> <!-- Terçeira Linha -->
+            <td>A3</td> <!-- coluna 1 -->
+            <td>B3</td> <!-- coluna 2 -->
+            <td>C3</td> <!-- coluna 3 -->
+        </tr>
+        <tr> <!-- Quarta Linha -->
+            <td>A4</td> <!-- coluna 1 -->
+            <td class="dado">B4</td> <!-- coluna 2 -->
+            <td>C4</td> <!-- coluna 3 -->
+        </tr>
+        <tr>
+            <td>A5</td>
+            <td>B5</td>
+        </tr>
+        <tr>
+            <td>A6</td>
+        </tr>
+    </table>
+</body>
+</html>
