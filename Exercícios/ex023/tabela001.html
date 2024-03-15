@@ -11,23 +11,29 @@
 
         table{
             width: 400px;
+            height: 400px;
             border-collapse: collapse;  
             /* 
                 Border-Collapse: colllapse; = Isso serve para colar uma borta na outra
             */
         }
-
-        tr.linha{
-            background-color: darkgray;
-        }
-
         td{
             border: 1px solid black;
             padding: 8px;
+            text-align: center;
+            vertical-align: top; 
+            /*
+                VERTICAL-ALIGN: TOP;
+
+                Alinhamento vertical
+                middle = centro
+                top = cima
+                bottom = baixo
+            */
         }
 
-        td.dado{
-            background-color: bisque;
+        .numero {
+            text-align: right;
         }
     </style>
 </head>
@@ -49,27 +55,20 @@
             <td>B1</td> <!-- coluna 2 -->
             <td>C1</td> <!-- coluna 3 -->
         </tr>
-        <tr class="linha"> <!-- Segunda Linha -->
+        <tr> <!-- Segunda Linha -->
             <td>A2</td> <!-- coluna 1 -->
             <td>B2</td> <!-- coluna 2 -->
-            <td>C2</td> <!-- coluna 3 -->
+            <td class="numero">C2</td> <!-- coluna 3 -->
         </tr>
         <tr> <!-- Terçeira Linha -->
             <td>A3</td> <!-- coluna 1 -->
             <td>B3</td> <!-- coluna 2 -->
-            <td>C3</td> <!-- coluna 3 -->
+            <td class="numero">C3</td> <!-- coluna 3 -->
         </tr>
         <tr> <!-- Quarta Linha -->
             <td>A4</td> <!-- coluna 1 -->
-            <td class="dado">B4</td> <!-- coluna 2 -->
+            <td>B4</td> <!-- coluna 2 -->
             <td>C4</td> <!-- coluna 3 -->
-        </tr>
-        <tr>
-            <td>A5</td>
-            <td>B5</td>
-        </tr>
-        <tr>
-            <td>A6</td>
         </tr>
     </table>
 </body>
