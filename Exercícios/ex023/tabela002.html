@@ -1,38 +1,50 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabelas</title>
 
     <style>
-        body{
+        body {
             font-family: Arial, Helvetica, sans-serif;
         }
-        table{
+
+        table {
             width: 500px;
             border-collapse: collapse;
         }
-        caption{
+
+        caption {
             font-size: 1.5em;
             font-weight: bold;
             padding: 10px;
             background-color: lightgray;
         }
-        td, th{
+
+        td,
+        th {
             border: 1px solid black;
             padding: 10px;
         }
 
-        thead, tfoot{
+        thead,
+        tfoot {
             background-color: gray;
             color: white;
         }
-        td.num{
+
+        tbody tr:nth-child(2n) {
+            background-color: lightgray;
+        }
+
+        td.num {
             text-align: right;
         }
     </style>
 </head>
+
 <body>
     <h1>Uso de Tabelas Grandes</h1>
     <!--
@@ -174,4 +186,5 @@
         </tfoot>
     </table>
 </body>
+
 </html>
