@@ -14,6 +14,13 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
+        }
+
+        td,
+        th {
+            border: 1px solid black;
+            padding: 10px;
         }
 
         caption {
@@ -23,16 +30,16 @@
             background-color: lightgray;
         }
 
-        td,
-        th {
-            border: 1px solid black;
-            padding: 10px;
-        }
-
         thead,
         tfoot {
-            background-color: gray;
+            background-color: #383838;
             color: white;
+        }
+
+        thead > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color: #383838;
         }
 
         tbody tr:nth-child(2n) {
@@ -185,6 +192,9 @@
             </tr>
         </tfoot>
     </table>
+    <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt rem quos, tempore sit consectetur sequi culpa dicta molestias impedit non omnis et a repellendus error laboriosam! Officia a ipsa labore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque nihil unde voluptatibus exercitationem vel quidem praesentium facilis non ipsam at, tempore quo. Quisquam illum, illo possimus iure doloribus ducimus delectus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum sapiente dolores perspiciatis, vitae consequuntur, quis delectus numquam voluptas similique, eaque eius aut aperiam! Recusandae nulla, tenetur vero exercitationem ut ipsam! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia expedita praesentium, deserunt eaque corrupti veritatis quod nulla aut, sint dolor necessitatibus. Ab accusantium ratione itaque ipsam error magni nam maxime.
+    </p>
 </body>
 
 </html>
