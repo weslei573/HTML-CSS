@@ -10,8 +10,8 @@ Desktop: 992px ate 1200px
 Grandes telas: acima de 1200px 
 */
 
-@media screen and (min-width: 768px){
-    i#burguer{
+@media screen and (min-width: 768px) {
+    i#burguer {
         display: none;
     }
 
@@ -19,11 +19,11 @@ Grandes telas: acima de 1200px
         display: block;
     }
 
-    menu > ul >li{
+    menu>ul>li {
         display: inline-block;
     }
 
-    main{
+    main {
         width: 768px;
     }
 }
