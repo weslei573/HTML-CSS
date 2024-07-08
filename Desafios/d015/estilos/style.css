@@ -1,9 +1,9 @@
 @charset "UTF-8";
 
-/* 
- Paleta de cores
- verde: #49a09d;
- Lilas: #5f2c82
+/*
+    Paleta de cores
+    Verde: #49a09d
+    Lilás: #5f2c82
 */
 
 * {
@@ -31,13 +31,12 @@ section#login {
     top: 50%;
     left: 50%;
     overflow: hidden;
-    
     background-color: white;
-    width: 260px;
-    height: 520px;
+    width: 250px;
+    height: 515px;
     border-radius: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.459);
-    
+
     transform: translate(-50%, -50%);
     transition: width .3s, height .3s;
     transition-timing-function: ease;
@@ -55,45 +54,71 @@ section#login>div#formulario {
     display: block;
     padding: 10px;
 }
-div#formulario > h1{ 
+
+div#formulario>h1 {
     text-align: center;
     margin-bottom: 10px;
 }
 
-div#formulario > p{
-    font-size: 0.9em;
+div#formulario>p {
+    font-size: 0.8em;
 }
 
-form > div.campo{
+form>div.campo {
     background-color: #5f2c82;
+    border: 2px solid #5f2c82;
     display: block;
     width: 100%;
     height: 40px;
-    border-radius: 5px;
+    border-radius: 8px;
     margin: 5px 0px;
 }
 
-div.campo > label{
+div.campo>label {
     display: none;
 }
 
-form > input[type=submit]{
+div.campo>i {
+    color: white;
+    font-size: 1.8em;
+    width: 40px;
+    padding: 5px;
+}
+
+div.campo>input {
+    background-color: #94cfcd;
+    font-size: 1em;
+    width: calc(100% - 45px);
+    height: 100%;
+    border: 0px;
+    border-radius: 8px;
+    padding: 4px;
+
+    transform: translateY(-9px);
+}
+
+div.campo>input:focus-within {
+    background-color: white;
+    border: none;
+}
+
+form>input[type=submit] {
     display: block;
     font-size: 1em;
     width: 100%;
     height: 40px;
-    background-color: #49a09d;
+    background-color: #53aaa7;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
 }
 
-form > input[type=submit]:hover{
+form>input[type=submit]:hover {
     background-color: #2d6462;
 }
 
-form > a.botao{
+form>a.botao {
     display: block;
     text-align: center;
     font-size: 1em;
@@ -108,10 +133,10 @@ form > a.botao{
     text-decoration: none;
 }
 
-form > a.botao:hover{
-    background-color: #6ef6f2;
+form>a.botao:hover {
+    background-color: #6cd3cf;
 }
 
-form > a.botao > i{
+form>a.botao>i {
     font-size: 0.8em;
 }
