@@ -1,0 +1,15 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "Live Preview",
+			"workspacePath": "c:\\Users\\weslei\\OneDrive\\Documentos\\Curso js\\HTML\\HTML-CSS",
+			"problemMatcher": [],
+			"label": "Live Preview: Executar Servidor",
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			}
+		}
+	]
+}
