@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Flexible Box</title>
+	<style>
+		.conteiner {
+			background-color: lightsalmon;
+
+			display: flex;
+			flex-flow: row wrap;
+		}
+		/* || PODE ENCOLHER?  */
+		/* flex-shrink: 1; */
+		/* || PODE AUMENTAR */
+		/* flex-grow: 0; */
+		.item-1{
+			flex-basis: 100%;
+			background-color: lightskyblue;
+			border: 1px solid black;
+			text-align: center;
+			padding: 2rem;
+		}
+		.item-2, .item-3 {
+			background-color: lightskyblue;
+			border: 1px solid black;
+			text-align: center;
+			padding: 2rem;
+			flex-grow: 1;
+			flex-basis: 40%;
+		}
+	</style>
+</head>
+<body>
+	<div class="conteiner">
+		<div class="item-1">A</div>
+		<div class="item-2">B</div>
+		<div class="item-3">C</div>
+	</div>
+</body>
+</html>
