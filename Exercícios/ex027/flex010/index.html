@@ -1,42 +1,53 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Flexible Box</title>
-	<style>
-		.conteiner {
-			background-color: lightsalmon;
-
-			display: flex;
-			flex-flow: row wrap;
-		}
-		/* || PODE ENCOLHER?  */
-		/* flex-shrink: 1; */
-		/* || PODE AUMENTAR */
-		/* flex-grow: 0; */
-		.item-1{
-			flex-basis: 100%;
-			background-color: lightskyblue;
-			border: 1px solid black;
-			text-align: center;
-			padding: 2rem;
-		}
-		.item-2, .item-3 {
-			background-color: lightskyblue;
-			border: 1px solid black;
-			text-align: center;
-			padding: 2rem;
-			flex-grow: 1;
-			flex-basis: 40%;
-		}
-	</style>
+	<link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-	<div class="conteiner">
-		<div class="item-1">A</div>
-		<div class="item-2">B</div>
-		<div class="item-3">C</div>
-	</div>
+	<main class="conteiner">
+		<section class="item">
+			<h1 class="main__section-h1">Join our community</h1>
+			<div>
+				<h2 class="main__section__h2">30-day, hassle-free money back guarantee</h2>
+				<p class="main__section__p">
+					Gain access to our full library of tutorials along with expert code reviews.
+					Perfect for any developers who are serious about honing their skills.
+				</p>
+			</div>
+		</section>
+
+		<section class="item section">
+			<h2 class="section__h2">Monthly Subscription</h2>
+			<div>
+				<div class="section__item">
+					<span class="section__item__hero">&dollar;29</span>
+					<span class="section__item__hero-sub">per month</span>
+				</div>
+				<p class="section__p">
+					Full access for less than &dollar;1 a day
+				</p>
+			</div>
+			<button class="btn">Sign Up</button>
+		</section>
+
+		<section class="item section">
+			<h2 class="section__h2">Why Us</h2>
+			<ul class="section__p">
+				<li>Tutorials by industry experts </li>
+				<li>Peer &amp; expert code review </li>
+				<li>Coding exercises </li>
+				<li>Access to our GitHub repos</li>
+				<li>Community forum</li>
+				<li>Flashcard decks</li>
+				<li>New videos every week</li>
+			</ul>
+		</section>
+	</main>
 </body>
+
 </html>

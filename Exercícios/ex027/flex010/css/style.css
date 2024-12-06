@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+/* || VARIAVEL */
+:root {
+    /* FONTS */
+    --FF: "Karla", sans-serif;
+    --FS-P: clamp(0.85rem, 2.2vw, 1rem);
+
+    /* COLORS */
+    --Cyan1: hsla(179, 62%, 43%, 0.85);
+    --Cyan: hsl(179, 62%, 43%);
+    --Bright-Yellow: hsl(71, 73%, 54%);
+    --Light-Gray: hsl(204, 43%, 93%);
+    --Grayish-Blue: hsl(218, 22%, 67%);
+}
+
+/* || GENERAL */
+body {
+    background-color: var(--Light-Gray);
+    height: 100vh;
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+/* CONTEINER */
+.conteiner {
+    display: flex;
+    flex-flow: row wrap;
+    max-width: 636px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+/* ITEM */
+.item {
+    background-color: white;
+    padding: 2rem;
+    flex-basis: 50%;
+    flex-shrink: 1;
+    flex-grow: 1;
+}
+
+.item:first-child{
+    flex-basis: 100%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.item:nth-child(2) {
+    background-color: var(--Cyan);
+    border-bottom-left-radius: 8px;
+}
+
+.item:nth-child(3){
+    background-color: var(--Cyan1);
+    border-bottom-right-radius: 8px;
+}
+
+.main__section-h1 {
+    color: var(--Cyan);
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.main__section__h2 {
+    font-size: clamp(0.9rem, 2.2vw, 1.13rem);
+    color: var(--Bright-Yellow);
+    margin-bottom: 15px;
+}
+
+.main__section__p {
+    color: var(--Grayish-Blue);
+    font-size: var(--FS-P);
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.section__h2 {
+    font-size: clamp(1.1rem, 2.2vw, 1.3rem);
+    color: white;
+}
+
+.section__p {
+    color: whitesmoke;
+    font-size: var(--FS-P);
+    line-height: 1.5;
+}
+
+.section__p>li {
+    font-size: clamp(0.85, 2.2vw, 0.9rem);
+}
+
+/* || ITEM */
+.section__item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 5px;
+}
+
+.section__item__hero {
+    font-size: 2rem;
+    font-weight: 700;
+    color: white;
+}
+
+.section__item__hero-sub {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+/* || BUTTOM */
+.btn {
+    background-color: var(--Bright-Yellow);
+    color: white;
+    font-family: var(--FF);
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 1rem;
+    border: none;
+    border-radius: 6px;
+    margin-top: 15px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+@media (max-width: 420px) {
+    .item:nth-child(2) {
+        border-bottom-left-radius: 0px;
+    }
+    
+    .item:nth-child(3){
+        background-color: var(--Cyan1);
+        border-bottom-right-radius: 8px;
+        border-bottom-left-radius: 8px;
+    }
+}
